@@ -70,7 +70,7 @@ module.exports = {
       use: {
         loader: 'file-loader',
         options: {
-          name: 'files/[name].[ext]'
+          name: `${argv.production ? `/` : ''}files/[name].[ext]`
         }
       }
     }, {
