@@ -26,6 +26,8 @@ const { argv } = require('yargs').options({
   }
 });
 
+argv.production = false;
+
 const projectPath = __dirname;
 const sourcePath = join(projectPath, 'src');
 const buildPath = join(projectPath, 'docs');
