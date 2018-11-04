@@ -1,8 +1,15 @@
-import definition from './definition.json';
+import definitionUrl from './definition.json';
 import { render } from './item';
 import './styles.scss';
 
-const content = render(definition);
-const paper = document.querySelector('.paper');
+function renderSheet(definition) {
+  const content = render(definition);
+  const paper = document.querySelector('.paper');
 
-paper.appendChild(content);
+  paper.appendChild(content);
+}
+
+window
+  .fetch(definitionUrl)
+  .then((resp) => resp.json())
+  .then((definition) => renderSheet(definition));

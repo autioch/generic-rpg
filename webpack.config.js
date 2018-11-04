@@ -62,12 +62,15 @@ module.exports = {
         plugins: ['transform-object-rest-spread']
       }
     }, {
-      test: /\.(ttf|eot|woff)$/i,
+      // fixes json with webpack 4
+      // https://github.com/webpack/webpack/issues/6586#issuecomment-398737313
+      type: 'javascript/auto',
+      test: /\.(ttf|eot|woff|json)$/i,
       exclude: /node_modules/,
       use: {
         loader: 'file-loader',
         options: {
-          name: 'fonts/[name].[ext]'
+          name: 'files/[name].[ext]'
         }
       }
     }, {
