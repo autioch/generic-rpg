@@ -18,7 +18,7 @@ rules:
     - style: '1tbs'
     - allow-single-line: false
   class-name-format:
-    - 1
+    - 0
     - convention: ^((is|has|m|s|c)-)?([a-z]+-?)+[a-z]+(__([a-z]+-?)+[a-z]+)?(--([a-z0-9]+-?)+([a-z0-9]+)?)?$
     - convention-explanation: 'Use namespaced hyphenated bem'
   clean-import-paths:

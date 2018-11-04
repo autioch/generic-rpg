@@ -1,0 +1,103 @@
+$field__font: 16px;
+$field__height: 20px;
+
+html {
+  font-family: Verdana;
+  font-size: $field__font;
+}
+
+.header {
+  text-align: center;
+  height: $field__height;
+  padding: #{$field__font / 2 + $field__height / 2} 0;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #444;
+
+  &::before,
+  &::after {
+    height: 4px;
+    width: 100%;
+    content: '';
+    background-color: #aaa;
+  }
+
+  &::before {
+    margin-right: .5em;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+  }
+
+  &::after {
+    margin-left: .5em;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+  }
+}
+
+.field {
+  display: flex;
+  width: 100%;
+  margin-bottom: $field__font / 2;
+  height: $field__height;
+}
+
+.field-label {
+  margin-right: .25em;
+  white-space: nowrap;
+}
+
+.field-value {
+  width: 100%;
+
+  &::after {
+    border-bottom: dotted 1px #999;
+    content: '';
+    width: 100%;
+    height: 1px;
+    display: inline-block;
+  }
+}
+
+.columns {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.column {
+  flex: none;
+  box-sizing: border-box;
+
+  &:not(:first-child) {
+    padding-left: .5em;
+  }
+
+  &:not(:last-child) {
+    padding-right: .5em;
+  }
+
+  + .column {
+    border-left: solid 2px #eee;
+  }
+}
+
+.column-8 {
+  width: 66.6%;
+}
+
+.column-6 {
+  width: 50%;
+}
+
+.column-4 {
+  width: 33.3%;
+}
+
+.column-2 {
+  width: 16.6%;
+}

@@ -1,0 +1,108 @@
+{
+  "type": "columns",
+  "items": [
+    {
+      "size": 8,
+      "items": [
+        {
+          "type": "header",
+          "label": "General"
+        },
+        {
+          "type": "field",
+          "label": "Name"
+        },
+        {},{},{},
+        {
+          "type": "header",
+          "label": "Attributes"
+        },
+        {
+          "type": "columns",
+          "items": [
+            {
+              "items": [
+                {
+                  "type": "header",
+                  "label": "Physical"
+                },
+                {},{},{},{},{},{}
+              ]
+            },
+            {
+              "items": [
+                {
+                  "type": "header",
+                  "label": "Mental"
+                },
+                {},{},{},{},{},{}
+              ]
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "label": "Skills"
+        },
+        {
+          "type": "columns",
+          "items": [
+            {
+              "items": [
+                {
+                  "type": "header",
+                  "label": "Physical"
+                },
+                {},{},{},{},{},{}
+              ]
+            },
+            {
+              "items": [
+                {
+                  "type": "header",
+                  "label": "Mental"
+                },
+                {},{},{},{},{},{}
+              ]
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "label": "Equipment"
+        },
+        {
+          "type": "columns",
+          "items": [
+            {
+              "items": [{},{},{},{},{},{},{},{},{}]
+            },
+            {
+              "items": [{},{},{},{},{},{},{},{},{}]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "items": [
+        {
+          "type": "header",
+          "label": "Money"
+        },
+        {},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}
+      ]
+    },
+    {
+      "size": 2,
+      "items": [
+        {
+          "type": "header",
+          "label": "Health"
+        },
+        {},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}
+      ]
+    }
+  ]
+}

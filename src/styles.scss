@@ -1,9 +1,6 @@
 $chrome__bug: .1cm;
 $a4__width: 21cm;
 $a4__height: 29.7cm - $chrome__bug;
-$margin: .5cm;
-
-html {}
 
 body {
   margin: 0;
@@ -17,8 +14,8 @@ body {
   background: #fff;
   flex-direction: column;
   box-shadow: 0 0 .5cm rgba(0, 0, 0, .5);
-  width: $a4__width;// - $margin - $margin;
-  height: $a4__height;// - $margin - $margin;
+  width: $a4__width;
+  height: $a4__height;
   margin: 1cm auto;
   padding: 1cm;
   box-sizing: border-box;
@@ -27,49 +24,4 @@ body {
   @media print {
     margin: 0;
   }
-}
-
-.header {
-  text-align: center;
-  font-size: 1.2em;
-  margin-bottom: .25em;
-  display: flex;
-  align-items: center;
-  white-space: nowrap;
-
-  &:not(:first-child) {
-    margin-top: 1em;
-  }
-
-  &::before,
-  &::after {
-    height: 1px;
-    width: 100%;
-    content: '';
-    background-color: #aaa;
-  }
-
-  &::before {
-    margin-right: 1em;
-  }
-
-  &::after {
-    margin-left: 1em;
-  }
-}
-
-.field {
-  display: flex;
-  width: 100%;
-}
-
-.field-label {
-  white-space: nowrap;
-}
-
-.field-value {
-  width: 100%;
-  border-bottom: dotted 1px #777;
-  margin-bottom: 4px;
-  margin-left: .25em;
 }
