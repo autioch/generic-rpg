@@ -26,8 +26,6 @@ const { argv } = require('yargs').options({
   }
 });
 
-argv.production = false;
-
 const projectPath = __dirname;
 const sourcePath = join(projectPath, 'src');
 const buildPath = join(projectPath, 'docs');
@@ -118,10 +116,11 @@ module.exports = {
     argv.watch ? new LiveReloadPlugin({
       appendScriptTag: true,
       ignore: /.(config|ico|js|json|html|template|woff)$/
-    }) : undefined,
-    argv.production ? new UglifyJsPlugin({
-      sourceMap: false
     }) : undefined
+
+    // argv.production ? new UglifyJsPlugin({
+    //   sourceMap: false
+    // }) : undefined
   ].filter((plugin) => plugin !== undefined),
   stats: {
     assetsSort: 'size',
